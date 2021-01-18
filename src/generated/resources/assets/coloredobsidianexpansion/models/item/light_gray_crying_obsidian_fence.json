@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_inventory",
+  "textures": {
+    "texture": "coloredobsidianexpansion:block/light_gray_crying_obsidian"
+  }
+}

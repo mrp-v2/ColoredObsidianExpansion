@@ -1,0 +1,14 @@
+{
+  "type": "mrplibrary:crafting_shapeless",
+  "result": {
+    "item": "coloredobsidianexpansion:red_crying_obsidian_slab"
+  },
+  "ingredients": [
+    {
+      "tag": "coloredobsidianexpansion:crying_obsidian_slab"
+    },
+    {
+      "tag": "forge:dyes/red"
+    }
+  ]
+}

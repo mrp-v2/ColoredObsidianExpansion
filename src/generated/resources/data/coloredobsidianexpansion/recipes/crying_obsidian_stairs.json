@@ -1,0 +1,11 @@
+{
+  "type": "mrplibrary:crafting_shapeless",
+  "result": {
+    "item": "obsidianexpansion:crying_obsidian_stairs"
+  },
+  "ingredients": [
+    {
+      "tag": "coloredobsidianexpansion:crying_obsidian_stairs_base"
+    }
+  ]
+}

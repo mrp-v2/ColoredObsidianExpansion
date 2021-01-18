@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "coloredobsidianexpansion:block/orange_crying_obsidian"
+  }
+}

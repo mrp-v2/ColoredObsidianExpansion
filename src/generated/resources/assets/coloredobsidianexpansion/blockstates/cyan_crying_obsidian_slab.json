@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=top": {
+      "model": "coloredobsidianexpansion:block/cyan_crying_obsidian_slab_top"
+    },
+    "type=bottom": {
+      "model": "coloredobsidianexpansion:block/cyan_crying_obsidian_slab"
+    },
+    "type=double": {
+      "model": "coloredobsidianexpansion:block/cyan_crying_obsidian"
+    }
+  }
+}

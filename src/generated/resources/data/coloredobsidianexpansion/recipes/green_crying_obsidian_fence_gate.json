@@ -1,0 +1,14 @@
+{
+  "type": "mrplibrary:crafting_shapeless",
+  "result": {
+    "item": "coloredobsidianexpansion:green_crying_obsidian_fence_gate"
+  },
+  "ingredients": [
+    {
+      "tag": "coloredobsidianexpansion:crying_obsidian_fence_gate"
+    },
+    {
+      "tag": "forge:dyes/green"
+    }
+  ]
+}
