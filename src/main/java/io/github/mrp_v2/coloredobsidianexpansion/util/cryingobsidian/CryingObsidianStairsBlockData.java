@@ -1,41 +1,45 @@
 package io.github.mrp_v2.coloredobsidianexpansion.util.cryingobsidian;
 
-import io.github.mrp_v2.coloredobsidianexpansion.util.ObjectHolder;
-import mrp_v2.additionalcolors.api.ColoredBlockDataHandler;
+import mrp_v2.additionalcolors.AdditionalColors;
 import mrp_v2.additionalcolors.api.colored_block_data.AbstractColoredBlockData;
-import mrp_v2.additionalcolors.api.colored_block_data.BasicColoredStairsBlockData;
+import mrp_v2.additionalcolors.api.colored_block_data.ColoredStairsBlockData;
 import mrp_v2.additionalcolors.api.datagen.BlockStateGenerator;
+import mrp_v2.additionalcolors.api.datagen.ItemModelGenerator;
 import mrp_v2.additionalcolors.block.ColoredStairsBlock;
+import mrp_v2.additionalcolors.util.colored_block_data.CryingObsidianBlockData;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.DyeColor;
-import net.minecraft.item.Item;
-import net.minecraft.tags.ITag;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.fml.RegistryObject;
 
-public abstract class CryingObsidianStairsBlockData extends BasicColoredStairsBlockData
+public class CryingObsidianStairsBlockData extends ColoredStairsBlockData
 {
-    public CryingObsidianStairsBlockData(RegistryObject<? extends Block> baseBlock, ITag.INamedTag<Block>[] blockTagsToAddTo,
-            ITag.INamedTag<Item>[] itemTagsToAddTo, AbstractColoredBlockData<?> baseBlockData,
-            ColoredBlockDataHandler coloredBlockDataHandler)
+    public CryingObsidianStairsBlockData(RegistryObject<? extends Block> baseBlock,
+            AbstractColoredBlockData<?> baseBlockData)
     {
-        super(baseBlock, blockTagsToAddTo, itemTagsToAddTo, baseBlockData, coloredBlockDataHandler);
+        super(baseBlock, baseBlockData);
+    }
+
+    @Override protected ColoredStairsBlock makeNewBlock(DyeColor color)
+    {
+        return new ColoredStairsBlock(() -> mrp_v2.additionalcolors.util.ObjectHolder.COLORED_BLOCK_DATA_HANDLER
+                .getColoredBlockData(Blocks.CRYING_OBSIDIAN.getRegistryName()).getBlockObject(color).get()
+                .getDefaultState(), getBlockProperties(color), color);
     }
 
     @Override public void registerBlockStatesAndModels(BlockStateGenerator generator)
     {
         for (RegistryObject<ColoredStairsBlock> blockObject : blockObjectMap.values())
         {
-            generator.stairsBlock(blockObject.get(), new ResourceLocation(coloredBlockDataHandler.getModId(),
+            generator.stairsBlock(blockObject.get(), new ResourceLocation(AdditionalColors.ID,
                     "block/" + blockObject.getId().getPath().replace("_stairs", "")));
         }
     }
 
-    @Override protected ColoredStairsBlock makeNewBlock(DyeColor color)
+    @Override public DyeColor[] getColors()
     {
-        return new ColoredStairsBlock(() -> ObjectHolder.CRYING_OBSIDIAN_BLOCK_MAP.get(color).get().getDefaultState(),
-                getBlockProperties(), color);
+        return CryingObsidianBlockData.CRYING_OBSIDIAN_COLORS;
     }
 
     @Override public boolean requiresTinting()
@@ -43,17 +47,12 @@ public abstract class CryingObsidianStairsBlockData extends BasicColoredStairsBl
         return false;
     }
 
-    @Override public void registerItemModels(ItemModelProvider generator)
+    @Override public void registerItemModels(ItemModelGenerator generator)
     {
         for (RegistryObject<ColoredStairsBlock> blockObject : blockObjectMap.values())
         {
             String path = blockObject.getId().getPath();
             generator.withExistingParent(path, generator.modLoc("block/" + path));
         }
-    }
-
-    @Override public DyeColor[] getColors()
-    {
-        return ObjectHolder.CRYING_OBSIDIAN_COLORS;
     }
 }

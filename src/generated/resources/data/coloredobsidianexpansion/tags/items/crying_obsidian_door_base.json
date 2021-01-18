@@ -1,16 +1,16 @@
 {
   "replace": false,
   "values": [
-    "coloredobsidianexpansion:green_crying_obsidian_door",
-    "coloredobsidianexpansion:cyan_crying_obsidian_door",
     "coloredobsidianexpansion:orange_crying_obsidian_door",
-    "coloredobsidianexpansion:light_gray_crying_obsidian_door",
     "coloredobsidianexpansion:black_crying_obsidian_door",
+    "coloredobsidianexpansion:red_crying_obsidian_door",
+    "coloredobsidianexpansion:blue_crying_obsidian_door",
+    "coloredobsidianexpansion:cyan_crying_obsidian_door",
+    "coloredobsidianexpansion:brown_crying_obsidian_door",
+    "coloredobsidianexpansion:green_crying_obsidian_door",
     "coloredobsidianexpansion:yellow_crying_obsidian_door",
     "coloredobsidianexpansion:gray_crying_obsidian_door",
-    "coloredobsidianexpansion:red_crying_obsidian_door",
-    "coloredobsidianexpansion:white_crying_obsidian_door",
-    "coloredobsidianexpansion:blue_crying_obsidian_door",
-    "coloredobsidianexpansion:brown_crying_obsidian_door"
+    "coloredobsidianexpansion:light_gray_crying_obsidian_door",
+    "coloredobsidianexpansion:white_crying_obsidian_door"
   ]
 }

@@ -1,0 +1,8 @@
+{
+  "type": "additionalcolors:crafting_colored",
+  "ingredient": {
+    "tag": "additionalcolors:crying_obsidian_fence_gate_base"
+  },
+  "result": "obsidianexpansion:crying_obsidian_fence_gate",
+  "count": 1
+}

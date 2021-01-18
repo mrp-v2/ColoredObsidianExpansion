@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_fence_gate_open",
   "textures": {
-    "texture": "coloredobsidianexpansion:block/cyan_crying_obsidian"
+    "texture": "additionalcolors:block/cyan_crying_obsidian"
   }
 }

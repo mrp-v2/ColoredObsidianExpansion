@@ -1,0 +1,8 @@
+{
+  "type": "additionalcolors:crafting_colored",
+  "ingredient": {
+    "tag": "coloredobsidianexpansion:crying_obsidian_door"
+  },
+  "result": "coloredobsidianexpansion:black_crying_obsidian_door",
+  "count": 1
+}

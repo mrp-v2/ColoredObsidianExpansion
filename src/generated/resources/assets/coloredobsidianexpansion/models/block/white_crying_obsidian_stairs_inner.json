@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/inner_stairs",
   "textures": {
-    "side": "coloredobsidianexpansion:block/white_crying_obsidian",
-    "bottom": "coloredobsidianexpansion:block/white_crying_obsidian",
-    "top": "coloredobsidianexpansion:block/white_crying_obsidian"
+    "side": "additionalcolors:block/white_crying_obsidian",
+    "bottom": "additionalcolors:block/white_crying_obsidian",
+    "top": "additionalcolors:block/white_crying_obsidian"
   }
 }

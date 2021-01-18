@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "additionalcolors:crying_obsidian_fence_gate"
+    },
+    {
+      "tag": "forge:dyes/light_gray"
+    }
+  ],
+  "result": {
+    "item": "coloredobsidianexpansion:light_gray_crying_obsidian_fence_gate"
+  }
+}

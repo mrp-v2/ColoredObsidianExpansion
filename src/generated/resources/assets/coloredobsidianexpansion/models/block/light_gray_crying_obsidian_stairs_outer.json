@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/outer_stairs",
   "textures": {
-    "side": "coloredobsidianexpansion:block/light_gray_crying_obsidian",
-    "bottom": "coloredobsidianexpansion:block/light_gray_crying_obsidian",
-    "top": "coloredobsidianexpansion:block/light_gray_crying_obsidian"
+    "side": "additionalcolors:block/light_gray_crying_obsidian",
+    "bottom": "additionalcolors:block/light_gray_crying_obsidian",
+    "top": "additionalcolors:block/light_gray_crying_obsidian"
   }
 }

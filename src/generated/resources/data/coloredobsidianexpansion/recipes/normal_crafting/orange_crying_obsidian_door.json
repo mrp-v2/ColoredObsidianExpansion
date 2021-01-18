@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "coloredobsidianexpansion:crying_obsidian_door"
+    },
+    {
+      "tag": "forge:dyes/orange"
+    }
+  ],
+  "result": {
+    "item": "coloredobsidianexpansion:orange_crying_obsidian_door"
+  }
+}

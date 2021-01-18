@@ -1,0 +1,8 @@
+{
+  "type": "additionalcolors:crafting_colored",
+  "ingredient": {
+    "tag": "coloredobsidianexpansion:crying_obsidian_glass"
+  },
+  "result": "coloredobsidianexpansion:light_gray_crying_obsidian_glass",
+  "count": 1
+}

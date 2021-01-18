@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "additionalcolors:crying_obsidian_slab"
+    },
+    {
+      "tag": "forge:dyes/white"
+    }
+  ],
+  "result": {
+    "item": "coloredobsidianexpansion:white_crying_obsidian_slab"
+  }
+}

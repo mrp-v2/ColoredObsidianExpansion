@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "additionalcolors:crying_obsidian_fence"
+    },
+    {
+      "tag": "forge:dyes/cyan"
+    }
+  ],
+  "result": {
+    "item": "coloredobsidianexpansion:cyan_crying_obsidian_fence"
+  }
+}

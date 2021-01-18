@@ -7,7 +7,7 @@
       "model": "coloredobsidianexpansion:block/black_crying_obsidian_slab"
     },
     "type=double": {
-      "model": "coloredobsidianexpansion:block/black_crying_obsidian"
+      "model": "additionalcolors:block/black_crying_obsidian"
     }
   }
 }
